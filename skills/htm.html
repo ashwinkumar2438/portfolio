@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML</title>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../fa/css/all.css">
+    <link rel="stylesheet" href="customize.css">
+    <script src="../jquery.min.js"></script>
+    <script src="../dist/js/bootstrap.js"></script>
+    <script type="text/javascript">
+      function htmlpage(){
+        var xhttp;
+				  if (window.XMLHttpRequest) {
+					// code for modern browsers
+					xhttp = new XMLHttpRequest();
+					} else {
+					// code for IE6, IE5
+					xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+				  }
+				  xhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+					  document.getElementById("maincontent").innerHTML = this.responseText;
+					}
+				  };
+				  xhttp.open("GET", "html.html", true);
+				  xhttp.send();
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="nav navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+        <a class="navbar-brand" href="../index.html">HOME</a>
+        <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#details">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="details">
+          <ul class="nav navbar-nav navbar-right" id="aboutt">
+            <li><a href="#" onclick="htmlpage()">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li> <a href="#">JAVASCRIPT</a></li>
+            <li> <a href="#">BOOTSTRAP</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </nav>
+    <div id="maincontent">
+
+    </div>
+
+  </body>
+</html>

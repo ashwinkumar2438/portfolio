@@ -1,0 +1,193 @@
+html{
+  scroll-behavior: smooth;
+}
+#navcont{
+  background: yellow;
+}
+#navcont a{
+  color:maroon;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+#navv{
+  background: black !important;
+  opacity:0.7;
+}
+.sticky{
+  opacity: 1 !important;
+}
+.navbar-header>a{
+  transition:transform 2s;
+}
+.navbar-header>a:hover{
+  transform:scale(1.3,1.3)
+}
+.dropdown-menu{
+  border-radius: 4px !important;
+}
+.dropdown-menu:hover{
+  display: block;
+}
+.dropdown-toggle:hover+.dropdown-menu{
+  display:block;
+}
+#navcont a>i{
+  transition: color 1s;
+}
+#navcont a>i:hover{
+  color: white;
+}
+#aboutt a{
+  transition: color 1s;
+}
+#aboutt a:hover{
+  color:grey;
+}
+#bimage{
+  height:730px;
+  background-image:url("backimage.jpg");
+  background-size: cover;
+}
+#bimage>h2{
+  text-align: center;
+  margin-top: 350px;
+  font-size: 24px;
+}
+#maincontentback{
+  background: linear-gradient(132deg,teal,aqua,indigo,darkorange,coral,lightsalmon);
+  background-size: 500%,500%;
+  animation: backanimation 40s ease infinite;
+  -webkit-animation: backanimation 40s ease infinite;
+}
+@keyframes backanimation{
+  0% {background-position:0% 0%; }
+  30% {background-position:100% 100%;}
+  70% {background-position:200% 200%;}
+  100% {background-position:0% 0%;}
+}
+@-webkit-keyframes backanimation{
+  0% {background-position:0% 0%; }
+  30% {background-position:100% 100%;}
+  70% {background-position:200% 200%;}
+  100% {background-position:0% 0%;}
+}
+article{
+  font-size: 30px;
+  line-height: 30px;
+  text-align: justify;
+  font-family: 'Just Another Hand', cursive;
+  font-weight: 100;
+}
+article>span{
+  color:darkcyan;
+}
+#maincontent h3{
+  font-weight: bold;
+}
+#selfimage{
+  border-radius: 50%;
+  box-shadow: 0px 10px 30px black;
+  height:300px;
+  width:300px;
+  margin-left: 100px;
+  margin-top: 50px;
+  transition:box-shadow 1s,transform 3s;
+}
+#selfimage:hover{
+  box-shadow: 0px 10px 50px blue;
+  transform:scale(1.1,1.1);
+}
+#portfoliodiv img{
+  height:250px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+
+}
+#portfoliodiv img:hover{
+  box-shadow: 0px 0px 10px blue;
+}
+.pflink{
+  text-align: center;
+  color:blue;
+  font-size: 22px;
+  font-family: serif;
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-decoration: none;
+}
+.pflink:hover{
+  color:white;
+}
+
+.pflinka:hover{
+  text-decoration: none;
+}
+#quotes article{
+  color:Lime;
+  padding-top: 20px;
+  font-size: 20px;
+  text-shadow: 0px 0px 2px green;
+}
+#quote1{
+  transition: transform 3s;
+}
+#quote2{
+  transition: transform 3s;
+  transition-delay:0.2s;
+}
+#quote3{
+  transition: transform 3s;
+  transition-delay: 0.4s;
+}
+#quote4{
+  transition: transform 3s;
+  transition-delay: 0.6s;
+}
+
+#quotes:hover #quote1{
+  transform:rotateX(360deg);
+}
+#quotes:hover #quote2{
+  transform:rotateX(360deg);
+}
+#quotes:hover #quote3{
+  transform:rotateX(360deg);
+}
+#quotes:hover #quote4{
+  transform:rotateX(360deg);
+}
+#quotes article>span{
+  color:tomato;
+}
+#footer{
+  min-height:200px;
+  background:black;
+}
+#footer button{
+  border:1px solid white;
+  color:white;
+  padding:5px 15px 5px 15px;
+  font-family: "Courier New";
+  font-weight: lighter;
+  font-size:18px;
+  border-radius: 3px;
+  margin-top:30px;
+  margin-right: 10px;
+  background: black;
+  transition: background 1s, color 1s;
+}
+#footer button:hover{
+  background:gainsboro;
+  color:black;
+}
+#contact-icons{
+  margin:20px 0px 0px 30px;
+}
+#contact-icons i{
+  margin-left: 20px;
+  color: white;
+  font-size: 20px;
+}
+#contact-icons i:hover{
+  transform:scale(1.4,1.4);
+}
